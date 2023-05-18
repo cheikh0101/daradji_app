@@ -1,0 +1,34 @@
+<section id="course-details" class="course-details">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="course-info d-flex justify-content-between align-items-center">
+          <h5>Nombre de beyit</h5>
+          <p>{{bayites.length}}</p>
+        </div>
+        <div class="course-info d-flex justify-content-between align-items-center">
+          <h5>Traduire</h5>
+          <div class="mb-0" name="" id="">
+            <select class="form-select form-select-sm">
+              <option *ngFor="let langue of langues" value=" {{langue.id}} ">{{langue.name}}</option>
+            </select>
+          </div>
+        </div>
+        <div class="course-info d-flex justify-content-between align-items-center">
+          <h5>Partager</h5>
+          <div class="d-flex">
+            <qr-code value="https://daradji-5bf07.web.app/khassida/{{khassidaId}}/details" size="1" errorCorrectionLevel="M"></qr-code>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="course-content">
+          <h3 class="text-center">{{ khassidaName | uppercase }} </h3>
+          <p *ngFor="let bayite of bayites" class="text-center">
+            {{ bayite.contenu }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

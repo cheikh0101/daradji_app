@@ -1,0 +1,92 @@
+<header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+        <a href="#" class="logo d-flex align-items-center">
+            <h1>Daradji</h1>
+        </a>
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a routerLink="">Accueil</a></li>
+                <li><a routerLink="quran">Quran</a></li>
+                <li><a routerLink="about">A propos</a></li>
+                <li><a routerLink="contact">Contact</a></li>
+            </ul>
+        </nav>
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+    </div>
+</header>
+<!-- <nav class="navbar navbar-expand-lg bg-primary sticky-top">
+  <div class="container">
+    <a class="navbar-brand fs-1" style="color: #ffff;" href="/">Daradji</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a routerLink="/"></a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active fs-6" aria-current="page" style="color: #ffff;" routerLink="/">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active fs-6" routerLink="quran" style="color: #ffff;">Quran</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active fs-6" routerLink="about" style="color: #ffff;">A propos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active fs-6" routerLink="contact" style="color: #ffff;">Contact</a>
+        </li>
+      </ul>
+      </span>
+    </div>
+  </div>
+</nav> -->
+<ngx-ui-loader fgsColor="#0d6efd"></ngx-ui-loader>
+<router-outlet></router-outlet>
+<!-- ======= Footer ======= -->
+<footer id="footer" class="footer">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-lg-5 col-md-12 footer-info">
+                <a href="" class="logo d-flex align-items-center">
+                    <span>Daradji</span>
+                </a>
+                <p> Daradji est une plateforme visant la vulgarisation des écrits de Serigne Touba.</p>
+                <div class="social-links d-flex mt-4">
+                    <a href="https://wa.me/?text=https://daradji-5bf07.web.app/" class="instagram"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-6 footer-links">
+                <h4>Liens Utiles</h4>
+                <ul>
+                    <li><a routerLink="">Accueil</a></li>
+                    <li><a routerLink="quran">Quran</a></li>
+                    <li><a routerLink="about">A propos</a></li>
+                    <li><a routerLink="contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                <h4>Nous contacter</h4>
+                <p>
+                    Dakar<br>
+                    Sénégal <br>
+                    <strong>Phone:</strong> +221 77 111 61 22<br>
+                    <strong>Email:</strong> cheikhgueye000@gmail.com<br>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="copyright">
+            &copy; Copyright <strong><span>Daradji</span></strong>. Tous droits réservés
+        </div>
+        <div class="credits">
+            Réalisé par <a href="https://cheikh0101.github.io/portfolio/"><strong><span>CTG</span></strong></a>
+        </div>
+    </div>
+</footer><!-- End Footer -->

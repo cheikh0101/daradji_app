@@ -1,0 +1,28 @@
+<section id="course-details" class="course-details">
+  <div class="container" >
+    <div class="row">
+      <div class="col-lg-8 ">
+        <div class="course-content">
+          <h3 class="text-center">{{sourateInformations.englishName | uppercase}} </h3>
+          <p *ngFor="let ayah of sourateInformations.ayahs" class="text-center" >
+            {{ ayah.text  }} {{ ayah.numberInSurah  }}
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="course-info d-flex justify-content-between align-items-center">
+          <h5>Numéro de la sourate</h5>
+          <p><a href="#"> {{sourateInformations.number}} </a></p>
+        </div>
+        <div class="course-info d-flex justify-content-between align-items-center">
+          <h5>Nombre de Ayahs</h5>
+          <p>{{sourateInformations.numberOfAyahs}}</p>
+        </div>
+        <div class="course-info d-flex justify-content-between align-items-center">
+          <h5>Lieu de révélation</h5>
+          <p> {{sourateInformations.revelationType}} </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
